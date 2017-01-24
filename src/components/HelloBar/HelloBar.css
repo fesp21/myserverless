@@ -1,0 +1,166 @@
+$textColor: #fff;
+.hellobar {
+	position: fixed;
+	background: rgba(42,45,50,0.85);
+	z-index: 1000;
+	pointer-events: none;
+	color: rgba(250,251,255,0.95);
+	font-size: 90%;
+	background: $black1;
+	color: $textColor;
+	animation-duration: 0.8s;
+	left: 0px;
+  width: 100%;
+  max-width: 100%;
+}
+.show {
+	pointer-events: auto;
+}
+/* Reverse animation on hide */
+.hide {
+  animation-direction: reverse;
+}
+.debug {
+	animation-duration: 2s;
+	animation-iteration-count: 100;
+}
+/** Animation & Animation types */
+.hellobar.top {
+	transform-origin: center top;
+	box-shadow: 0 13px 10px -5px rgba(0,0,0,0.2);
+	top: 0;
+	:global { animation-name: flipDownBounce; }
+	&.hide {
+		/* animation on hide */
+	  :global { animation-name: flipDownSimple; }
+	  animation-duration: 0.3s;
+	}
+}
+.hellobar.bottom {
+	bottom: 0px;
+	transform-origin: center bottom;
+	:global { animation-name: flipUpBounce; }
+	&.hide {
+		/* animation on hide */
+	  :global { animation-name: flipUpSimple; }
+		animation-duration: 0.3s;
+	}
+}
+
+/* Content */
+.inner {
+  padding-right: 30px;
+}
+.close {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	overflow: hidden;
+	text-indent: 100%;
+	cursor: pointer;
+	backface-visibility: hidden;
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+	&:hover::after,
+	&:hover::before {
+	  background: #fff;
+	}
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 3px;
+		height: 60%;
+		top: 50%;
+		left: 50%;
+		background: #eee;
+	}
+	&::before {
+		transform: translate(-50%,-50%) rotate(45deg);
+	}
+	&::after {
+		transform: translate(-50%,-50%) rotate(-45deg);
+	}
+}
+
+/* Animations */
+@keyframes :global(flipUp) {
+  0% { transform: perspective(600px) rotateX(90deg);}
+	80% {transform: perspective(600px)  rotateX(-10deg);}
+	100% {transform: perspective(600px) rotateX(0deg);}
+}
+
+@keyframes :global(flipUpBounce) {
+  0% {
+      transform: perspective(400px) rotate3d(1,0,0,90deg);
+      transition-timing-function: ease-in;
+  }
+  40% {
+      transform: perspective(400px) rotate3d(1,0,0,-20deg);
+      transition-timing-function: ease-out;
+  }
+  60% {
+      transform: perspective(400px) rotate3d(1,0,0,10deg);
+      transition-timing-function: ease-in;
+      opacity: 1;
+  }
+  80% {
+      transform: perspective(400px) rotate3d(1,0,0,-5deg);
+      transition-timing-function: ease-out;
+  }
+  100% {
+      transform: perspective(400px);
+  }
+}
+@keyframes :global(flipUpSimple) {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+@keyframes :global(flipDownBounce) {
+  0% {
+      transform: perspective(400px) rotate3d(1,0,0,-90deg);
+      transition-timing-function: ease-in;
+  }
+  40% {
+      transform: perspective(400px) rotate3d(1,0,0,20deg);
+      transition-timing-function: ease-out;
+  }
+  60% {
+      transform: perspective(400px) rotate3d(1,0,0,-10deg);
+      transition-timing-function: ease-in;
+      opacity: 1;
+  }
+  80% {
+      transform: perspective(400px) rotate3d(1,0,0,5deg);
+      transition-timing-function: ease-out;
+  }
+  100% {
+      transform: perspective(400px);
+  }
+}
+
+@keyframes :global(flipDownSimple) {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -90deg);
+    transition-timing-function: ease-in;
+  }
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+@media screen and (max-width: 25em) {
+  .fullWidth {
+
+  }
+}

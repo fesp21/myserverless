@@ -1,0 +1,27 @@
+.background {
+  background: $black2;
+  width: 100vw;
+  height: 100vh;
+}
+.submitContent {
+  margin: auto;
+  padding-top: 30px;
+  width: 70%;
+  color: #fff;
+}
+.button {
+  width: 70%;
+  margin: auto;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $black2;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+.errorMessage {
+  color: red;
+}

@@ -1,0 +1,446 @@
+$sidebarWidth: 250px;
+$ctaWidth: 220px;
+$backgroundColor: #f6f6f6;
+$sidebarRadius: 6px;
+$contentLeftPadding: 70px;
+.docPage {
+  margin-top: 0px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.docContainer {
+  margin-top: 0px;
+}
+.docWrapper {
+  display: flex;
+  margin-top: 0px;
+}
+
+.breadCrumbContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  font-size: 15px;
+  padding-left: 20px;
+  background: $backgroundColor;
+  a {
+
+  }
+  a:hover {
+    opacity: 0.6;
+  }
+}
+.versionNumber {
+  border-top: 1px solid rgba(0,0,0,.05);
+  padding: 15px;
+  font-size: 1.4rem;
+  color: rgba(0,0,0,0.5);
+  position: fixed;
+  bottom: 0;
+  min-width: $sidebarWidth;
+  max-width: $sidebarWidth;
+  background: $backgroundColor;
+}
+.sidebar {
+  min-width: $sidebarWidth;
+  max-width: $sidebarWidth;
+  z-index: 5;
+  background: $backgroundColor;
+}
+.sidebarBlock {
+  margin-left: -10px;
+  padding: 10px;
+  padding-right: 0px;
+  min-width: $sidebarWidth;
+  max-width: $sidebarWidth;
+  border: none;
+  box-shadow: none;
+}
+.sidebarLinks {
+  margin-bottom: 5px;
+  a:hover {
+    border-bottom: 1px dashed black;
+  }
+}
+.searchBumper {
+  min-height: 47px;
+  background: $backgroundColor;
+  min-width: $sidebarWidth;
+  max-width: $sidebarWidth;
+}
+
+.searchWrapper {
+  background: $backgroundColor;
+  min-width: $sidebarWidth;
+  max-width: $sidebarWidth;
+  z-index: 6;
+  padding: 15px;
+  padding-top: 19px;
+  padding-bottom: 20px;
+  border-top: 1px solid #dddddd;
+}
+.searchBox {
+  min-width: $ctaWidth;
+  width: $ctaWidth;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background: #fff;
+  color: #676767;
+  line-height: 1;
+  height: 35px;
+  padding: 0px 8px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.sidebarInner {
+  background: #fff;
+  min-width: $sidebarWidth;
+  max-width: $sidebarWidth;
+  padding: 0px;
+  background: #f6f6f6;
+}
+
+/* Docs Content */
+.content {
+  flex-grow: 1;
+  position: relative;
+  padding-top: 3rem;
+  max-width: 100%;
+  padding-bottom: $footerHeight;
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding-left: $contentLeftPadding;
+  padding-bottom: 560px;
+  pre code:global(.hljs) {
+    margin-left: -$contentLeftPadding !important;
+    padding-left: $contentLeftPadding !important;
+    border-left: none;
+    border-right: none;
+    background: #f8f8f8 !important;
+  }
+  $copyWidth: 45px;
+
+  :global(.phenomic-HeadingAnchor) {
+    display: inline-block;
+    position: absolute !important;
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 130px;
+    margin-left: -50px;
+    /* line-height: 1.4rem; */
+    text-decoration: none;
+    z-index: 7;
+    opacity: .1;
+    line-height: inherit;
+    color: transparent;
+    transition: opacity .2s;
+    border-bottom: none !important;
+    &:before {
+      content: "#";
+      transform: none;
+      position: absolute;
+      top: 0px;
+      left: 30px;
+      background-color: transparent;
+      height: auto;
+      color: $black2;
+      visibility: visible;
+    }
+    &:after {
+      opacity: .4;
+      visibility: hidden;
+      position: absolute;
+      content: "copy link";
+      text-align: center;
+      height: 20px;
+      transform: none;
+      width: 55px;
+      font-size: 11px;
+      padding: 3px 5px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: white;
+      background-color: #191919;
+      top: 85%;
+      left: 8px;
+      border-radius: 3px;
+      transition: .25s ease-in-out 0s;
+      z-index: 11;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &:active:after {
+      content: "copied!" !important;
+      background-color: #787878;
+    }
+    &:hover:after {
+      visibility: visible;
+    }
+  }
+  a {
+    position: relative;
+    &:hover:before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+    &:before {
+      position: absolute;
+      bottom: -1px;
+      visibility: hidden;
+      width: 100%;
+      height: 1px;
+      content: '';
+      transition: all .15s ease-in-out 0s;
+      transition-delay: 0s;
+      transform: scaleX(0);
+      background-color: rgba(0,0,0,0.5);
+    }
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    max-width: 650px;
+    position: relative;
+    /*&:hover :global(.phenomic-HeadingAnchor) {
+      opacity: .3;
+    }*/
+  }
+  p, pre, code, ul, li {
+    z-index: 3;
+    position: relative;
+  }
+  ul {
+    padding-left: 25px;
+    padding-right: 80px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    z-index: 1;
+    &:before {
+      display: block;
+      content: " ";
+      margin-top: -80px;
+      height: 80px;
+      visibility: hidden;
+    }
+  }
+  h1 {
+    font-size: 32px;
+    &:first-of-type {
+      margin-top: 0px;
+      :global(.phenomic-HeadingAnchor) {
+        display:none;
+      }
+    }
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+}
+a.editLinkWrapper {
+  border: none;
+  display: inline-block;
+  font-size: 13px;
+  padding: 5px;
+  /* padding-top: 1px; */
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  &:before {
+    display:none;
+  }
+}
+.editLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+  :global(.SVGInline) {
+    display: flex;
+    height: 100%;
+  }
+  .text {
+    margin-left: 5px;
+    padding-top: 1px;
+  }
+  svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+.currentURL a {
+  font-weight: bold;
+  &:after {
+    content: '-';
+    position: absolute;
+    color: #a5a5a5;
+    left: -10px;
+    transform: none;
+    transition: none;
+  }
+}
+.pageContext {
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 0;
+  margin: 0px 20px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+  padding-bottom: 0px;
+  padding-top: 0;
+  font-size: 15px;
+}
+.subPages {
+  padding: 10px;
+  margin: 0 10px;
+  margin-top: 0px;
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 0px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.subPageLinkHeading {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+.subPageLink {
+  font-size: 14px;
+  line-height: 2.3;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    border: none;
+    position: relative;
+    width: 100%;
+    display: block;
+    &:hover {
+      color: #000;
+    }
+    &:hover:after {
+      content: '-';
+      position: absolute;
+      color: #a5a5a5;
+      left: -10px;
+      transform: none;
+      transition: none;
+    }
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .content {
+    padding-left: 30px;
+    padding-bottom: 560px;
+    pre code:global(.hljs) {
+      margin-left: -30px !important;
+      padding-left: 30px !important;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+      padding-right: 25px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .sidebarInner {
+    min-width: 100%;
+  }
+  .breadCrumbContainer {
+    flex-direction: column;
+  }
+  .breadCrumbContainer li:first-of-type {
+    display: none;
+  }
+  .searchWrapper {
+    margin-top: 10px;
+    width: 50%;
+    border-top: none;
+  }
+  a.editLinkWrapper {
+    position: initial;
+    padding: 0px;
+    margin-bottom: 15px;
+  }
+  .versionNumber {
+    display: none;
+  }
+  .page, .sidebar, .searchBumper, .searchWrapper {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .sidebar {
+    margin-bottom: 0px;
+  }
+  .docWrapper {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  .content {
+    padding-bottom: 30px;
+    padding-left: 13px;
+    padding-right: 0px;
+    padding-top: 15px;
+    pre code:global(.hljs) {
+      font-size: 1.2rem;
+      line-height: 1.4;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    :global(.phenomic-HeadingAnchor) {
+      display: none;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+      padding-right: 13px;
+
+    }
+    h1, h2, h3, h4, h5, h6 {
+      &:before {
+        display: block;
+        content: " ";
+        margin-top: -80px;
+        height: 80px;
+        visibility: hidden;
+      }
+    }
+    ul {
+      padding-right: 10px;
+    }
+  }
+
+  .subPageLink, .subPageLinkHeading {
+    font-size: 16px;
+  }
+}
+
+
+:global(.safari .phenomic-HeadingAnchor) {
+  &:after {
+    display: none;
+    opacity: 0;
+  }
+}

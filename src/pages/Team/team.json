@@ -1,0 +1,140 @@
+[
+  {
+     "name": "Austen Collins",
+     "title": "CEO",
+     "github": "ac360",
+     "twitter": "austencollins",
+     "site": "http://serverless.com",
+     "avatar": "https://avatars3.githubusercontent.com/u/2752551?v=3&s=260",
+     "location": "San Francisco",
+     "bio": {
+       "short": "Founder & CEO and still doesn't get WestWorld"
+     }
+  },
+  {
+    "name": "David Wells",
+    "github": "DavidWells",
+    "twitter": "DavidWells",
+    "site": "http://davidwells.io/",
+    "avatar": "https://avatars2.githubusercontent.com/u/532272?v=3&s=260",
+    "location": "San Francisco",
+    "bio": {
+      "short": "Full Stack JavaScript Developer and ramen enthusiast",
+      "long":
+        "David is a Full Stack JavaScript Developer, entrepreneur, past life marketer. Developer @ http://serverless.com "
+    }
+  },
+  {
+    "name": "Casey Shultz",
+    "title": "Head of Operations",
+    "github": "AlaskaCasey",
+    "twitter": "AlaskaCasey",
+    "avatar": "https://avatars.githubusercontent.com/alaskacasey?v=3&s=260",
+    "location": "San Francisco",
+    "bio": {
+      "short": "Head of Operations and Mysore yoga addict",
+      "long":
+        "Serverless Operations Manager Casey Shultz is a yoga loving, dog cuddling, San Francisco transplant originally from Alaska. When she's not ruling the Serverless office with an iron fist you can find her camping in Yosemite."
+    }
+  },
+  {
+    "name": "Nick Gottlieb",
+    "title": "Head of Customer Development",
+    "github": "worldsoup",
+    "twitter": "worldsoup",
+    "linkedin": "nicholasgottlieb",
+    "site": "http://serverless.com",
+    "avatar": "https://avatars1.githubusercontent.com/u/1475986?v=3&s=260",
+    "location": "San Francisco",
+    "bio": {
+      "short": "Head of Customer Development and global man of mystery",
+      "long":
+        "Nick is passionate about understanding and solving complex problems for software development teams. Prior to joining Serverless he was in charge of scaling growth at CircleCI and helped to design and build early versions of CircleCI Enterprise."
+    }
+  },
+  {
+    "name": "Stefanie Monge",
+    "title": "Content Strategy & Events",
+    "github": "Stefmonge",
+    "twitter": "stefaniemonge",
+    "linkedin": "stefaniemonge",
+    "site": "http://serverless.com",
+    "avatar": "https://avatars1.githubusercontent.com/u/20538501?v=3&s=260",
+    "location": "San Francisco",
+    "bio": {
+      "short": "Content Strategy & Events and social entrepreneur",
+      "long":
+        "Nick is passionate about understanding and solving complex problems for software development teams. Prior to joining Serverless he was in charge of scaling growth at CircleCI and helped to design and build early versions of CircleCI Enterprise."
+    }
+  },
+  {
+    "name": "Philipp Müns",
+    "title": "Senior Core Developer",
+    "github": "pmuens",
+    "twitter": "pmmuens",
+    "linkedin": "philipp-muens",
+    "avatar": "https://avatars2.githubusercontent.com/u/1606004?v=3&s=260",
+    "location": "Germany",
+    "bio": {
+      "short": "Framework Core Developer and resident Jean Claude van Damme",
+      "long":
+        "Philipp Müns is a core developer at Serverless, Inc. He works on the team in charge of building and maintaining the Serverless Framework — an application framework for building web, mobile and IoT applications powered by AWS Lambda, Azure Functions, Google Cloud Functions and more"
+    }
+  },
+  {
+    "name": "Nik Graf",
+    "title": "Chief Frontend Nerd",
+    "github": "nikgraf",
+    "twitter": "nikgraf",
+    "linkedin": "nikolausgraf",
+    "site": "http://serverless.com",
+    "avatar": "https://avatars1.githubusercontent.com/u/223045?v=3&s=260",
+    "location": "Vienna, Austria",
+    "bio": {
+      "short": "Frontend Developer and triathlete",
+      "long":
+        "Nick is passionate about understanding and solving complex problems for software development teams. Prior to joining Serverless he was in charge of scaling growth at CircleCI and helped to design and build early versions of CircleCI Enterprise."
+    }
+  },
+  {
+    "name": "Danny King",
+    "title": "Designer",
+    "github": "dannykingme",
+    "twitter": "dannykingme",
+    "site": "http://dannyking.me/",
+    "avatar": "https://avatars2.githubusercontent.com/u/2594189?v=3&s=260",
+    "location": "San Francisco",
+    "bio": {
+      "short": "Designer and bio pending (Danny's girlfriend has to write it).",
+      "long":
+        "I design/develop tools for other designers/developers. Previously, I made prototyping simpler at Precursor and made search simpler at Google."
+    }
+  },
+  {
+    "name": "Eslam Hefnawy",
+    "github": "eahefnawy",
+    "twitter": "eahefnawy",
+    "linkedin": "eahefnawy",
+    "avatar": "https://avatars2.githubusercontent.com/u/2312463?v=3&s=260",
+    "location": "Bangkok",
+    "bio": {
+      "short": "Framework Senior Developer",
+      "long":
+        "Eslam is a Senior Developer at Serverless. He's leading the team in charge of building and maintaining the Serverless Framework since its inception in 2015. Before Serverless, he served in engineering roles in startups all over the world, most recently at YellowPay, a Bitcoin payment gateway based in Dubai. Eslam's experience is on the full stack with a focus on the backend. He's passionate about open source, dev tools and Bitcoin. He's been coding since 2006, and studied Computer Engineering at the Arab Academy for Science & Technology. Eslam is currently settled in Bangkok, Thailand while traveling around the world every couple of months."
+    }
+  },
+  {
+    "name": "Maciej Winnicki",
+    "title": "Principal Software Engineer",
+    "github": "mthenw",
+    "twitter": "mthenw",
+    "linkedin": "maciej-winnicki",
+    "avatar": "https://pbs.twimg.com/profile_images/803881721955545088/ASyqXe8j_400x400.jpg",
+    "location": "Poland",
+    "bio": {
+      "short": "Platform Backend Engineer and proud new father",
+      "long":
+        "Maciej Winnicki is a passionate software engineer focused on building distributed systems, designing easy-to-use APIs and creating tools for making developer's life easier. He has been working for different-sized companies, from a SV startup to the largest e-commerce site in Eastern Europe. These days you can find him actively contributing to and maintaining the open source projects."
+    }
+  }
+]

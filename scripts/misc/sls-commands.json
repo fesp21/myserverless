@@ -1,0 +1,206 @@
+{
+  "create": {
+    "create": {
+      "usage": "Create new Serverless Service.",
+      "lifecycleEvents": [
+        "create"
+      ],
+      "options": {
+        "template": {
+          "usage": "Template for the service. Available templates: ${humanReadableTemplateList}",
+          "required": true,
+          "shortcut": "t"
+        },
+        "path": {
+          "usage": "The path where the service should be created (e.g. --path my-service)",
+          "shortcut": "p"
+        }
+      }
+    }
+  },
+  "deploy": {
+    "deploy": {
+      "usage": "Deploy Service.",
+      "lifecycleEvents": [
+        "cleanup",
+        "initialize",
+        "setupProviderConfiguration",
+        "createDeploymentArtifacts",
+        "compileFunctions",
+        "compileEvents",
+        "deploy"
+      ],
+      "options": {
+        "stage": {
+          "usage": "Stage of the service",
+          "shortcut": "s"
+        },
+        "region": {
+          "usage": "Region of the service",
+          "shortcut": "r"
+        },
+        "noDeploy": {
+          "usage": "Build artifacts without deploying",
+          "shortcut": "n"
+        },
+        "verbose": {
+          "usage": "Show all stack events during deployment",
+          "shortcut": "v"
+        }
+      },
+      "commands": {
+        "function": {
+          "usage": "Deploys a single function from the service",
+          "lifecycleEvents": [
+            "deploy"
+          ],
+          "options": {
+            "function": {
+              "usage": "Name of the function",
+              "shortcut": "f",
+              "required": true
+            },
+            "stage": {
+              "usage": "Stage of the function",
+              "shortcut": "s"
+            },
+            "region": {
+              "usage": "Region of the function",
+              "shortcut": "r"
+            }
+          }
+        }
+      }
+    }
+  },
+  "invoke": {
+    "invoke": {
+      "usage": "Invokes a deployed function.",
+      "lifecycleEvents": [
+        "invoke"
+      ],
+      "options": {
+        "function": {
+          "usage": "The function name",
+          "required": true,
+          "shortcut": "f"
+        },
+        "stage": {
+          "usage": "Stage of the service",
+          "shortcut": "s"
+        },
+        "region": {
+          "usage": "Region of the service",
+          "shortcut": "r"
+        },
+        "path": {
+          "usage": "Path to JSON file holding input data",
+          "shortcut": "p"
+        },
+        "type": {
+          "usage": "Type of invocation",
+          "shortcut": "t"
+        },
+        "log": {
+          "usage": "Trigger logging data output",
+          "shortcut": "l"
+        }
+      }
+    }
+  },
+  "info": {
+    "info": {
+      "usage": "Displays information about the service.",
+      "lifecycleEvents": [
+        "info"
+      ],
+      "options": {
+        "stage": {
+          "usage": "Stage of the service",
+          "shortcut": "s"
+        },
+        "region": {
+          "usage": "Region of the service",
+          "shortcut": "r"
+        }
+      }
+    }
+  },
+  "logs": {
+    "logs": {
+      "usage": "Outputs the logs of a deployed function.",
+      "lifecycleEvents": [
+        "logs"
+      ],
+      "options": {
+        "function": {
+          "usage": "The function name",
+          "required": true,
+          "shortcut": "f"
+        },
+        "stage": {
+          "usage": "Stage of the service",
+          "shortcut": "s"
+        },
+        "region": {
+          "usage": "Region of the service",
+          "shortcut": "r"
+        },
+        "tail": {
+          "usage": "Tail the log output",
+          "shortcut": "t"
+        },
+        "startTime": {
+          "usage": "Logs before this time will not be displayed"
+        },
+        "filter": {
+          "usage": "A filter pattern"
+        },
+        "interval": {
+          "usage": "Tail polling interval in milliseconds. Default: \"1000\"",
+          "shortcut": "i"
+        }
+      }
+    }
+  },
+  "remove": {
+    "remove": {
+      "usage": "Remove resources.",
+      "lifecycleEvents": [
+        "remove"
+      ],
+      "options": {
+        "stage": {
+          "usage": "Stage of the service",
+          "shortcut": "s"
+        },
+        "region": {
+          "usage": "Region of the service",
+          "shortcut": "r"
+        },
+        "verbose": {
+          "usage": "Show all stack events during deployment",
+          "shortcut": "v"
+        }
+      }
+    }
+  },
+  "tracking": {
+    "tracking": {
+      "usage": "Enable or disable usage tracking.",
+      "lifecycleEvents": [
+        "tracking"
+      ],
+      "options": {
+        "enable": {
+          "usage": "Enable tracking (\"--enable\")",
+          "shortcut": "e"
+        },
+        "disable": {
+          "usage": "Disable tracking (\"--disable\")",
+          "shortcut": "d"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.header {
+  margin: 35px 0;
+  max-width: 660px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.headerText {
+  text-align: center;
+}
+
+.componentBox {
+  display: flex;
+}
+.component {
+  margin: 20px;
+  width: 33%;
+  text-align: center;
+  img {
+    width: 50px;
+  }
+}
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+@media (max-width: 850px) {
+  .componentBox {
+    display: block;
+  }
+  .component {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+  .component {
+    width: 90%;
+  }
+}

@@ -1,0 +1,4 @@
+---
+title: Compare
+layout: Default
+---

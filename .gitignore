@@ -1,0 +1,27 @@
+# node / npm
+node_modules
+serverless
+serverless-blog
+*.log
+
+# third party external content
+content-external
+
+# phenomic build
+dist
+lib
+secrets.json
+.env
+
+#IDE Stuff
+**/.idea
+.idea
+
+#OS STUFF
+.DS_Store
+.tmp
+
+# Ignore stuff pull from serverless core repo
+content/framework/docs
+# Blog content gets pulled from https://github.com/serverless/blog
+content/blog

@@ -1,0 +1,61 @@
+.header {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.subHeader {
+  text-align: center;
+  display: block;
+  padding-bottom: 70px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.component {
+  display: flex;
+  max-width: 50rem;
+  padding-bottom: 20px;
+  img {
+    margin-bottom: auto;
+    width: 50px;
+  }
+}
+
+.copy {
+  margin-left: 25px
+}
+.componentRight {
+  margin-left: auto;
+}
+
+.enterprise {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      width: 35rem;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+    button {
+      border: 1px solid black;
+      background: white;
+      padding: 15px 30px;
+      width: 35rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+.success {
+  color: green;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

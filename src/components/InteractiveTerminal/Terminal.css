@@ -1,0 +1,80 @@
+
+$terminalBackground: #232323;
+.window {
+  width: 80%;
+  margin: 0 auto 2rem;
+  box-shadow: 0 0.25rem 0.5rem #12181e;
+  border-radius: 0 0 0.1rem 0.1rem;
+  max-width: 560px;
+  border-radius: 5px;
+  height: 400px;
+  overflow: hidden;
+  margin: 100px 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
+  color: #dfe1e8;
+  background: $terminalBackground;
+}
+
+.bar {
+  background: #191919;
+  height: 36px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.btn, .btn::before, .btn::after {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  display: block;
+}
+
+.btn {
+  background: #f6b73e;
+  position: relative;
+  margin-left: 38px;
+  top: 12px;
+}
+.btn::before, .btn::after {
+  content: " ";
+  position: absolute;
+}
+.btn::before {
+  background: #f55551;
+  margin-left: -20px;
+}
+.btn::after {
+  background: #32c146;
+  margin-left: 20px;
+}
+.body {
+  height: 10rem;
+  padding: 18px;
+}
+.body pre {
+  margin: 0;
+}
+.body .pulse {
+  -webkit-animation: pulse 1s ease-in-out infinite;
+  -moz-animation: pulse 1s ease-in-out infinite;
+  animation: pulse 1s ease-in-out infinite;
+}
+.prompt {
+  color: #fff;
+}
+.input, .input:focus {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 22px;
+  background: #2b303b;
+  color: #ebcb8b;
+  width: 80%;
+  outline: none;
+}
+.inputContainer {
+ height: 100%;
+ p {
+   margin: 0px;
+ }
+}

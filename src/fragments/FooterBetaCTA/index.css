@@ -1,0 +1,50 @@
+.ctaBottom {
+  width: 100%;
+  background: $black2;
+  margin: 0;
+  padding: 25px 0 25px 0;
+  color: #fff;
+
+}
+.ctaBottomCopy {
+  color: #fff;
+  margin: 10px 0 10px;
+  font-size: 30px;
+  font-weight: 400;
+  font-size: 26px;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+.ctaBottomInner {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  bottom: 30px;
+  z-index: 6;
+}
+.ctaBottomRowOne {
+  width: 100%;
+  height: 140px;
+  background: url(../../assets/images/platform_4.gif) no-repeat 0 0;
+  background-position: center;
+  background-size: auto 100%;
+
+}
+.ctaBottomRowTwo {
+  width: 100%;
+  padding-left: 10px;
+  position: relative;
+  z-index: 1;
+  text-align:center;
+  p {
+    margin: 0;
+    padding: 15px 0;
+  }
+}
+@media (max-width: 768px) {
+  .ctaBottomCopy {
+    font-size: 23px;
+  }
+}

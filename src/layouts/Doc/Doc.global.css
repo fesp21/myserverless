@@ -1,0 +1,54 @@
+/* Using global styles for docs */
+.algolia-autocomplete {
+  width: 100%;
+}
+.docsSections {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-flow:row wrap;
+  max-width: 90%;
+}
+
+.docsSection {
+  width: 25%;
+}
+
+.docsSectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.docsSectionHeader a {
+  text-decoration: none;
+  border-bottom: 0px;
+  &:before {
+    visibility: hidden !important;
+  }
+}
+
+.docsSectionHeader img {
+  width: 90%;
+  border-radius: 6px;
+}
+
+.docsSection ul {
+  padding-left: 30px;
+}
+
+.docsSection ul li {
+  padding-bottom:3px;
+}
+@media (max-width: 768px) {
+  .docsSections {
+    width: 100%;
+    max-width: 100%;
+  }
+  .docsSection {
+    width: 95%;
+  }
+  .docsSectionHeader img {
+    width: 100%;
+  }
+}

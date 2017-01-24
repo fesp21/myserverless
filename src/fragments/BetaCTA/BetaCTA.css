@@ -1,0 +1,13 @@
+.container {
+  color: #fff;
+  text-align: center;
+  background: $black2;
+  padding: 30px 20px;
+}
+.title {
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+.image {
+  width: 50%;
+}

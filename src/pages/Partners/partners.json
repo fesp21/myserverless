@@ -1,0 +1,33 @@
+{
+  "trek10": {
+    "name": "Trek10",
+    "logo": "https://www.trek10.com/assets/logo.svg",
+    "tagline": "Trek10 builds, optimizes, and manages high-value, cloud-based solutions",
+    "description": "<p>Trek10 builds, optimizes, and manages high-value, cloud-based solutions with the absolute best DevOps tools and cloud services available. Their focus is on building container-based and event-driven architectures on AWS.</p><p>Trek10’s engineers have contributed heavily to the Serverless Framework since the early JAWS days and is expert at paring Lambda and other AWS platform services with the Serverless Framework to build enterprise ready, massively scalable systems.</p>",
+    "website": "https://www.trek10.com",
+    "stories": [{
+      "title": "GraphQL and Rendering HTML with Serverless",
+      "url":"/learn/graphql-and-serverless/"
+      }
+    ]
+  },
+  "SC5": {
+    "name": "SC5",
+    "logo": "https://sc5.io/wp-content/themes/sc5/dist/images/sc5logo-fill-red.svg",
+    "tagline": "We are 80 designers and hackers that build cloud native digital services",
+    "description": "We are 80 designers and hackers that build cloud native digital services that your customers love. We shift development investments from IT infrastructure to user experience by leveraging the full potential of managed cloud services.",
+    "website": "https://sc5.io"
+  },
+  "Parallax": {
+    "name": "Parallax",
+    "logo":"https://s3-us-west-2.amazonaws.com/assets.site.serverless.com/partners/Parralax-logo-white.png",
+    "tagline": "Bring us an idea.<br/>We’ll bring it to life.",
+    "description": "We’re a bunch of creatives based in Leeds. We make websites and apps. We also craft engaging content, build software, get friendly with search engines and turn our hands to all kinds of design, development and digital marketing. Bring us an idea. We’ll bring it to life.",
+    "website": "https://parall.ax/",
+    "stories": [{
+      "title": "Scaling to Millions With David Guetta",
+      "url":"/learn/scaling-to-millions-of-requests/"
+      }
+    ]
+  }
+}
